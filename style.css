@@ -1,0 +1,82 @@
+body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#text, #shape {
+    width: 300px;
+    padding: 50px;
+    display: inline-block;/*2 elements in the same line */
+    vertical-align: top;
+}
+
+/* text */
+
+p {
+    font-size: 22px;
+    transition: all 800ms ease 0s;
+    transform-origin: top left;
+    
+}
+
+p:hover{
+    /* font-size:30px;
+    background: greenyellow; */
+    transform:skew(30deg) scale(12);
+}
+
+/* shape */
+
+.circle1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    background: black;
+}
+.circle1:hover {
+    background: red;
+    border-radius: 0px;
+    
+}
+.circle2 {
+    width: 300px;
+    height: 100px;
+    border-radius: 150px / 50px; 
+    /* horizontal radius/ vertical radius */
+    background: black;
+    transition: all 800ms ease 0s;
+}
+.circle2:hover{
+    /* background: yellow;
+    height:300px;
+    border-radius: 150px; */
+    transform: rotate(180deg) scale(6);
+    background:pink;
+}
+
+.circle3 {
+    width: 300px;
+    height: 40px;
+    border-radius: 150px / 20px;
+    background: black;
+}
+.circle3:hover{
+    background: yellow;
+    height:300px;
+    border-radius: 150px;
+}
+
+.circle4 {
+    width: 300px;
+    height: 20px;
+    border-radius: 150px / 10px;
+    background: black;
+}
+.circle4:hover{
+    height:1000px;
+    border-radius: 150px;
+}
+
+#faces {
+    margin: 50px;
+}
